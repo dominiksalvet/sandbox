@@ -6,6 +6,7 @@
 language: shell
 
 jobs:
+  include:
   - language: ruby
     script: true
   - language: shell
