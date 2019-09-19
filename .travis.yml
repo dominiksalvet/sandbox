@@ -8,4 +8,6 @@ os:
   - osx
   - windows
 
+language: shell
+
 script: true
