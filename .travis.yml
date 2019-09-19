@@ -6,5 +6,6 @@
 os:
   - linux
   - osx
+  - windows
 
 script: true
