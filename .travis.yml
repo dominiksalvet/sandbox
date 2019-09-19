@@ -3,12 +3,26 @@
 # github.com/dominiksalvet/sandbox
 #-------------------------------------------------------------------------------
 
-matrix:
-  include:
-  - rvm: 2.2
-  - rvm: 2.5
+os: linux
+language: shell
 
 jobs:
   include:
-    - script: true
-    - script: true
+  - stage: Stage 1
+    name: Name 1
+    script: true
+
+  - name: Name 2
+    script: true
+
+  - stage: Stage 2
+    name: Name 3
+    script: true
+
+  - name: Name 4
+    os: osx
+    script: true
+
+  - Name: Name 5
+    os: windows
+    script: true
