@@ -8,4 +8,7 @@ matrix:
   - rvm: 2.2
   - rvm: 2.5
 
-script: true
+jobs:
+  include:
+    - script: true
+    - script: true
