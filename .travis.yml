@@ -23,6 +23,6 @@ jobs:
     os: osx
     script: true
 
-  - Name: Name 5
+  - name: Name 5
     os: windows
     script: true
