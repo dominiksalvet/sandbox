@@ -10,4 +10,8 @@ os:
 
 language: shell
 
-script: true
+jobs:
+  include:
+    - stage: Stage 1
+      name: Name 1
+      script: true
