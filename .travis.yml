@@ -7,7 +7,7 @@ language: shell
 
 matrix:
   include:
-  - language: ruby
+  - os: linux
     script: true
-  - language: shell
+  - os: osx
     script: true
