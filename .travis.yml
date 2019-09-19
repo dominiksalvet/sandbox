@@ -3,11 +3,9 @@
 # github.com/dominiksalvet/sandbox
 #-------------------------------------------------------------------------------
 
-language: shell
-
-jobs:
+matrix:
   include:
-  - os: linux
-    script: true
-  - os: osx
-    script: true
+  - rvm: 2.2
+  - rvm: 2.5
+
+script: true
