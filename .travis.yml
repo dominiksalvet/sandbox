@@ -5,15 +5,8 @@
 
 language: shell
 
-matrix:
-  include:
-    os:
-      - linux
-      - osx
-      - windows
-
 jobs:
-  include:
-    - stage: Stage 1
-      name: Name 1
-      script: true
+  - language: ruby
+    script: true
+  - language: shell
+    script: true
