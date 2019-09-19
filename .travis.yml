@@ -5,7 +5,7 @@
 
 language: shell
 
-matrix:
+jobs:
   include:
   - os: linux
     script: true
