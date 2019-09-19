@@ -3,12 +3,14 @@
 # github.com/dominiksalvet/sandbox
 #-------------------------------------------------------------------------------
 
-os:
-  - linux
-  - osx
-  - windows
-
 language: shell
+
+matrix:
+  include:
+    os:
+      - linux
+      - osx
+      - windows
 
 jobs:
   include:
