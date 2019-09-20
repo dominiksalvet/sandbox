@@ -15,7 +15,8 @@ jobs:
       script: echo "$PATH"
 
     - os: windows
+      install: choco install wsl
       script:
         - echo "$PATH"
-        - ls -al ~
-        - cat ~/.profile
+        - wsl ls -al ~
+        - wsl cat ~/.profile || echo wsl
