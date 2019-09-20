@@ -8,20 +8,11 @@ language: shell
 
 jobs:
   include:
-    - stage: Stage 1
-      name: Name 1
-      before_script: true
-      script: true
+    - os: linux
+      script: echo "$PATH"
 
-    - stage: Stage 2
-      name: Linux
-      os: linux
-      script: true
+    - os: osx
+      script: echo "$PATH"
 
-    - name: macOS
-      os: osx
-      script: true
-
-    - name: Windows
-      os: windows
-      script: true
+    - os: windows
+      script: echo "$PATH"
