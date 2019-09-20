@@ -15,4 +15,8 @@ jobs:
       script: uname -a
 
     - os: windows
-      script: uname -a
+      script:
+        - echo "$PATH"
+        - echo 'export PATH="$PATH:$HOME/.local/bin"' > ~/.profile
+        - exec "$0"
+        - echo "$PATH"
