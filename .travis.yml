@@ -8,28 +8,28 @@ language: shell
 
 jobs:
   include:
-  - stage: Stage 1
-    name: Name 1
-    script: |
-            ls ~ -al &&
-            false &&
-            true
+    - stage: Stage 1
+      name: Name 1
+      script:
+        - ls ~ -al
+        - false
+        - true
 
-  - name: Name 2
-    script: true
+    - name: Name 2
+      script: true
 
-  - stage: Stage 2
-    name: Name 3
-    script: true
+    - stage: Stage 2
+      name: Name 3
+      script: true
 
-  - name: Name 3
-    os: osx
-    script: true
+    - name: Name 3
+      os: osx
+      script: true
 
-  - name: Name 3
-    os: windows
-    script: true
+    - name: Name 3
+      os: windows
+      script: true
 
-  - name: Name 3
-    os: windows
-    script: true
+    - name: Name 3
+      os: windows
+      script: true
