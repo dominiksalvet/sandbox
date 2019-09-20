@@ -11,7 +11,7 @@ jobs:
   - stage: Stage 1
     name: Name 1
     script:
-      - ls -al
+      - ls ~ -al
       - true
 
   - name: Name 2
