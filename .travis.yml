@@ -14,11 +14,8 @@ jobs:
       script: true
 
     - stage: Stage 2
-      name: Name 2
-      os:
-        - linux
-        - osx
-        - windows
+      name: Linux
+      os: linux
       script: true
 
     - name: macOS
