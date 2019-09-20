@@ -10,26 +10,18 @@ jobs:
   include:
     - stage: Stage 1
       name: Name 1
-      script:
-        - ls ~ -al
-        - false
-        - true
-
-    - name: Name 2
+      before_script: true
       script: true
 
     - stage: Stage 2
-      name: Name 3
+      name: Linux
+      os: linux
       script: true
 
-    - name: Name 3
+    - name: macOS
       os: osx
       script: true
 
-    - name: Name 3
-      os: windows
-      script: true
-
-    - name: Name 3
+    - name: Windows
       os: windows
       script: true
