@@ -15,4 +15,4 @@ jobs:
       script: uname
 
     - os: windows
-      script: uname
+      script: echo "$0"
