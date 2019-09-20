@@ -9,14 +9,10 @@ language: shell
 jobs:
   include:
     - os: linux
-      script: uname -a
+      script: uname
 
     - os: osx
-      script: uname -a
+      script: uname
 
     - os: windows
-      script:
-        - echo "$PATH"
-        - echo 'export PATH="$PATH:$HOME/.local/bin"' > ~/.profile
-        - exec "$0"
-        - echo "$PATH"
+      script: uname
