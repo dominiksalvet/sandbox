@@ -20,10 +20,14 @@ jobs:
     name: Name 3
     script: true
 
-  - name: Name 4
+  - name: Name 3
     os: osx
     script: true
 
-  - name: Name 5
+  - name: Name 3
+    os: windows
+    script: true
+
+  - name: Name 3
     os: windows
     script: true
