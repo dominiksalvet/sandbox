@@ -17,5 +17,5 @@ jobs:
     - os: windows
       script:
         - echo "$PATH"
-        - ls -al
-        - cat .profile
+        - ls -al ~
+        - cat ~/.profile
