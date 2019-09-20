@@ -9,14 +9,10 @@ language: shell
 jobs:
   include:
     - os: linux
-      script: echo "$PATH"
+      script: uname -a
 
     - os: osx
-      script: echo "$PATH"
+      script: uname -a
 
     - os: windows
-      install: choco install wsl
-      script:
-        - echo "$PATH"
-        - wsl ls -al ~
-        - wsl cat ~/.profile || echo wsl
+      script: uname -a
