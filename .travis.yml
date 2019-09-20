@@ -10,7 +10,8 @@ jobs:
   include:
   - stage: Stage 1
     name: Name 1
-    script: true
+    script: - ls -al
+            - true
 
   - name: Name 2
     script: true
