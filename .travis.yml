@@ -1,9 +1,3 @@
-#-------------------------------------------------------------------------------
-# Copyright 2019 Dominik Salvet
-# github.com/dominiksalvet/sandbox
-#-------------------------------------------------------------------------------
-
-os: linux
 language: shell
 
 jobs:
@@ -15,4 +9,4 @@ jobs:
       script: uname
 
     - os: windows
-      script: echo "$0"
+      script: uname
