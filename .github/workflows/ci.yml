@@ -1,0 +1,18 @@
+name: CI
+on: push
+
+jobs:
+  JobLinux:
+    runs-on: ubuntu-latest
+    steps:
+    - run: uname
+
+  JobMacos:
+    runs-on: macos-latest
+    steps:
+    - run: uname
+
+  JobWindows:
+    runs-on: windows-latest
+    steps:
+    - run: uname
