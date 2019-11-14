@@ -10,7 +10,7 @@ jobs:
   JobMacos:
     runs-on: macos-latest
     steps:
-    - run: uname
+    - run: echo test
 
   JobWindows:
     runs-on: windows-latest
