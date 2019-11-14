@@ -8,9 +8,9 @@ jobs:
     - run: uname
 
   JobMacos:
-    runs-on: linux
+    runs-on: macos-latest
     steps:
-    - run: uname -a
+    - run: uname
 
   JobWindows:
     runs-on: windows-latest
