@@ -5,7 +5,11 @@ jobs:
   JobLinux:
     runs-on: ubuntu-latest
     steps:
-    - run: uname
+    - run: |
+        echo just a test > file.txt
+        false
+    - if: failure()
+      run: cat file.txt
 
   JobMacos:
     runs-on: macos-latest
