@@ -15,7 +15,6 @@ ifdef::asciidoctor[]
 endif::asciidoctor[]
 :idprefix:
 :stylesheet: asciidoc.css
-:imagesdir: images
 //:backend: docbook45
 //:backend: html5
 //:doctype: book
