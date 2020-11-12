@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo "${ECHO_PREFIX}hello from uninstall script"
+echo "${DIAG_PREFIX}hello from uninstall script"
