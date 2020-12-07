@@ -5,7 +5,16 @@ jobs:
   JobLinux:
     runs-on: ubuntu-latest
     steps:
-    - run: uname
+    - uses: actions/checkout@v2
+
+    - run: mkdir -p path/to/artifact
+
+    - run: echo hello > path/to/artifact/world.txt
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: my-artifact
+        path: path/to/artifact/world.txt
 
   JobMacos:
     runs-on: macos-latest
