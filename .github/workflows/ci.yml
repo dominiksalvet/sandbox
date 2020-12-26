@@ -20,8 +20,19 @@ jobs:
     runs-on: macos-latest
     steps:
     - run: uname
+    - run: echo lol
 
   JobWindows:
     runs-on: windows-latest
     steps:
     - run: uname
+    - run: echo lol
+
+  JobWSL:
+    runs-on: windows-2019
+    steps:
+    - uses: Vampire/setup-wsl@v1
+      with:
+        distribution: ubuntu-20.04
+    - run: uname
+    - run: echo lol
