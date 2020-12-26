@@ -20,13 +20,13 @@ jobs:
     runs-on: macos-latest
     steps:
     - run: uname
-    - run: echo lol
+    - run: echo lol | grep .
 
   JobWindows:
     runs-on: windows-latest
     steps:
     - run: uname
-    - run: echo lol
+    - run: echo lol | grep .
 
   JobWSL:
     runs-on: windows-2019
@@ -35,4 +35,4 @@ jobs:
       with:
         distribution: Ubuntu-20.04
     - run: uname
-    - run: echo lol
+    - run: echo lol | grep .
