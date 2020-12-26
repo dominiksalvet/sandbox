@@ -33,6 +33,6 @@ jobs:
     steps:
     - uses: Vampire/setup-wsl@v1
       with:
-        distribution: ubuntu-20.04
+        distribution: Ubuntu-20.04
     - run: uname
     - run: echo lol
